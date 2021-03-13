@@ -73,7 +73,7 @@ resource "checkpoint_management_put_file" "mgmt-put-userdef" {
 #ifndef __user_def__
 #define __user_def__
 
-cloud_balancer_ips=${var.gwlb-subnets};
+cloud_balancer_ips=${var.gwlb-subnets-range};
 
 #endif /* __user_def__ */
   CONTENT
