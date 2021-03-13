@@ -17,7 +17,7 @@ The project creates the following resources and combine them:
 9. **Virtual machines**: An API-enabled Check Point R80.40 Management, Nginx-ready machines in the spokes and Autoscaling-group of Check Point R80.40 Security gateways
 10. **Public IPs**: associated with the management and the spoke VMs
 11. **Gateway Load-Balancer**: A gateway load-balancer configured to send the traffic via GENEVE to the Autoscaling-group
-12. **Gateway Load-Balancer Endpoints**: In each of the Spoke subnets an endpoint is created and connected to the GWLB
+12. **Gateway Load-Balancer Endpoints**: In each of the Spoke VPCs an endpoint is created and connected to the GWLB
 
 ## Which are the outputs of the project?
 The project gives as outputs the Public IP address of the management server as well as the GWLB controller and template tags to use in the configuration of the management server.
