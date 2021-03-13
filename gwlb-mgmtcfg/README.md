@@ -16,6 +16,7 @@ The projects gives as output the command to configure the CME to onboard the Aut
 Once you will give the command to configure the Cloud Management Extension this will happen:
 1. **Onboarding**: The management will automatically onboard the gateways: performing the policy install and enabling all the required blade
 2. **Create the subnet objects and policies**: The CME will scan all of the subnets to look for the tags (x-chkp-gwlb-outbound / x-chkp-gwlb-inbound), and for the subnets tagged will create objects and policies automatically inside the policy just created, doing a policy install at the end
+3. **Change the routing of the tagged subnets**: The CME will add the routes (from the subnet and the Internet Gateway perspective) pointing to the GWLB endpoint to perform the required inspections
 
 ## How to use it
 The only thing that you need to do is changing the __*terraform.tfvars*__ file located in this directory.
