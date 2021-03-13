@@ -18,6 +18,7 @@ The project creates the following resources and combine them:
 10. **Public IPs**: associated with the management and the spoke VMs
 11. **Gateway Load-Balancer**: A gateway load-balancer configured to send the traffic via GENEVE to the Autoscaling-group
 12. **Gateway Load-Balancer Endpoints**: In each of the Spoke VPCs an endpoint is created and connected to the GWLB    
+    
 All of the above is created by a mix of resources and three different [Check Point CloudFormation Templates](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk111013)    
 
 ## Which are the outputs of the project?
