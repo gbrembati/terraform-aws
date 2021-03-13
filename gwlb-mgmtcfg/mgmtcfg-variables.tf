@@ -64,7 +64,7 @@ variable "last-jhf" {
     type = string
     default = "Check_Point_R80_40_JUMBO_HF_Bundle_T91_sk165456_FULL.tgz"
 }
-variable "gwlb-subnets" {
+variable "gwlb-subnets-range" {
     description = "Specify the GWLB subnets ranges"
     type = string
     default = "{<10.60.0.0,10.60.0.255>, <10.60.1.0,10.60.1.255>}"
