@@ -3,12 +3,6 @@ variable region {
     type = string
     default = "eu-west-1"
 }
-variable aws-account-id {
-    description = "Set the aws-account-id"
-    type = string
-    sensitive = true
-    default = "xxxxxxxxxxxxx"
-}
 variable aws-access-key {
     description = "AWS Access Key"
     type = string

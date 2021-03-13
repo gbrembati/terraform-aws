@@ -35,7 +35,6 @@ Then you would need to change the values inside the __*terraform.tfvars*__ file 
 region          = "eu-west-1"
 aws-access-key  = "xxxxxxxxxxxx"
 aws-secret-key  = "xxxxxxxxxxxx"
-aws-account-id  = "xxxxxxxxxxxx"
 
 linux-keypair   = "key-xxxxxxx"
 dns-zone        = "aws.<yourdomain>.com"

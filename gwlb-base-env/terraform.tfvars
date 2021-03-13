@@ -2,7 +2,6 @@
 region          = "eu-west-1"
 aws-access-key  = "xxxxxxxxxxxx"
 aws-secret-key  = "xxxxxxxxxxxx"
-aws-account-id  = "xxxxxxxxxxxx"
 
 linux-keypair   = "key-xxxxxxx"
 dns-zone        = "aws.<yourdomain>.com"

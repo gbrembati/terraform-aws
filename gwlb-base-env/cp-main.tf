@@ -199,7 +199,6 @@ resource "aws_vpc_endpoint" "gwlb-spoke-endpoint" {
 }
 
 resource "aws_vpc_peering_connection" "peering-checkpoint-to-gwlb" {
-  peer_owner_id = var.aws-account-id
   peer_vpc_id   = aws_vpc.vpc-checkpoint.id
   vpc_id        = aws_cloudformation_stack.cft-gwlb-checkpoint.outputs.VPCID
   auto_accept   = true
