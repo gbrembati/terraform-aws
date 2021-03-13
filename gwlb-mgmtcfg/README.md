@@ -9,10 +9,13 @@ The project creates the following resources and combine them:
 3. **AWS Datacenter object**: thanks to the CloudGuard Controller and the Datacentr object we can use AWS-defined entities in the rulebase
 4. **Config the user.def.FW1 file**: this allows the gateway to correctly answers to the GWLB health-checks 
 5. **Install the CME**: the Cloud Management Extension is used to dynamically provision VMSS Gateways
-6. **Update to a specified JHF**: it downloads and installs a specific Jumbo-Hotfix (by default : R80.40 Jumbo HotFix Take 91)
+6. **Update to a specified JHF**: it downloads and installs a specific Jumbo-Hotfix (by default : R80.40 Jumbo HotFix Take 91)   
 
 ## Which are the outputs of the project?
-The projects gives as output the command to configure the CME to onboard the Autoscaling-group, all of the other results are visible on the management server (using the SmartConsole application).
+The projects gives as output the command to configure the CME to onboard the Autoscaling-group, all of the other results are visible on the management server (using the SmartConsole application).   
+Once you will give the command to configure the Cloud Management Extension this will happen:
+1. **Onboarding**: The management will automatically onboard the gateways: performing the policy install and enabling all the required blade
+2. **Create the subnet objects and policies**: The CME will scan all of the subnets to look for the tags (x-chkp-gwlb-outbound / x-chkp-gwlb-inbound), and for the subnets tagged will create objects and policies automatically inside the policy just created, doing a policy install at the end
 
 ## How to use it
 The only thing that you need to do is changing the __*terraform.tfvars*__ file located in this directory.
