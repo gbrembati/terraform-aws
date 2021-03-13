@@ -14,7 +14,7 @@ The project creates the following resources and combine them:
 6. **Resource Group**: Per each of the resources is created a Resource Group to view them
 7. **Vnet peering**: Between the management spoke and the GWLB one
 8. **Network Security Groups**: associated with subnets and VMs, with the rules to allow the traffic
-9. **Virtual machines**: An API-enabled Check Point R80.40 Management, Nginx-ready machines in the spokes and Autoscaling-group of Check Point gateways
+9. **Virtual machines**: An API-enabled Check Point R80.40 Management, Nginx-ready machines in the spokes and Autoscaling-group of Check Point R80.40 Security gateways
 10. **Public IPs**: associated with the management and the spoke VMs
 11. **Gateway Load-Balancer**: A gateway load-balancer configured to send the traffic via GENEVE to the Autoscaling-group
 12. **Gateway Load-Balancer Endpoints**: In each of the Spoke subnets an endpoint is created and connected to the GWLB
@@ -47,5 +47,5 @@ spoke-env       = {
 If you want (or need) to further customize other project details, you can change defaults in the different __*name-variables.tf*__ files.   
 Here you will also able to find the descriptions that explains what each variable is used for.
 
-## The infrastruction created with the following design:
+## The Infrastructure is created with the following design:
 ![Architectural Design](/zimages/aws-gwlb-simple-env.jpg)
