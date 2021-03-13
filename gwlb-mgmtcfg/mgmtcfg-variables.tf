@@ -11,8 +11,8 @@ variable api-username {
 }
 variable api-password {
     description = "Set the secret to auth to the mgmt server"
-    sensitive = true
     type = string
+    default = "xxxxxx"
 }
 variable provider-context {
     description = "It can be used either web_api or gaia_api"
@@ -22,8 +22,8 @@ variable provider-context {
 
 variable gateway-sic {
     description = "Choose the SIC"
+    type = string
     default = "xxxxxx"
-    sensitive = true
 }
 
 variable ckp-mgmt-ip {
