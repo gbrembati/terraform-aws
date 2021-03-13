@@ -3,7 +3,7 @@ This repository is a collection of Terraform automation projects applicable to A
 
 ## Which are the projects available?
 The projects can be briefly described as follows:
-1. **aws/xxxx**: It creates an environment 
+1. **aws/gwlb-base-env**: It creates a Gateway Load-Balancer Centralized environment composed by Spoke VPCs, CKP Management and Autoscaling-group
 2. **aws/gwlb-mgmtcfg**: It configures an existing Check Point management through APIs with the settings needed in a GWLB Centralized Architecture
 
 ## Do you want to see more? 
