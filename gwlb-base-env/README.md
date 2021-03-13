@@ -17,13 +17,15 @@ The project creates the following resources and combine them:
 9. **Virtual machines**: An API-enabled Check Point R80.40 Management, Nginx-ready machines in the spokes and Autoscaling-group of Check Point R80.40 Security gateways
 10. **Public IPs**: associated with the management and the spoke VMs
 11. **Gateway Load-Balancer**: A gateway load-balancer configured to send the traffic via GENEVE to the Autoscaling-group
-12. **Gateway Load-Balancer Endpoints**: In each of the Spoke VPCs an endpoint is created and connected to the GWLB
+12. **Gateway Load-Balancer Endpoints**: In each of the Spoke VPCs an endpoint is created and connected to the GWLB    
+All of the above is created by a mix of resources and three different [Check Point CloudFormation Templates](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk111013)    
 
 ## Which are the outputs of the project?
 The project gives as outputs the Public IP address of the management server as well as the GWLB controller and template tags to use in the configuration of the management server.
 
 ## How to use it
-The only thing that you need to do is changing the __*terraform.tfvars*__ file located in this directory.
+The first thing that you want to do is to create EC2 Key-Pair that you will later need to connect to the EC2 Instances.
+Then you would need to change the values inside the __*terraform.tfvars*__ file located in this directory.
 
 ```hcl
 # Set in this file your deployment variables
