@@ -4,7 +4,7 @@ This repository is a collection of Terraform automation projects applicable to A
 ## Which are the projects available?
 The projects can be briefly described as follows:
 1. **aws/xxxx**: It creates an environment 
-2. **aws/xxxx**: It configures existing Check Point management through APIs with AWS objects
+2. **aws/gwlb-mgmtcfg**: It configures an existing Check Point management through APIs with the settings needed in a GWLB Centralized Architecture
 
 ## Do you want to see more? 
 Check out my Terraform Microsoft Azure repository here: [gbrembati / terraform-azure](https://github.com/gbrembati/terraform-azure)   
