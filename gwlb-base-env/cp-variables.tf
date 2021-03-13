@@ -94,7 +94,7 @@ variable "policy-pkg-gwlb" {
     type = string
     default = "pkg-gwlb-ingress"
 }
-variable "cme-template-gwlb" {
+variable "cme-provision-tag" {
     description = "Define the name of your aws cme template"
     type = string
     default = "ckpgwlb"

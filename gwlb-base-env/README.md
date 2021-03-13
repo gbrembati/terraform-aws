@@ -61,7 +61,7 @@ iam-role-mgmt      = "Create with read permissions"
 vpc-checkpoint     = "checkpoint"
 vpc-checkpoint-cidr = "10.60.0.0/22"
 policy-pkg-gwlb    = "pkg-gwlb-ingress"
-cme-template-gwlb  = "ckpgwlb"
+cme-provision-tag  = "ckpgwlb"
 ```
 If you want (or need) to further customize other project details, you can change defaults in the different __*name-variables.tf*__ files.   
 Here you will also able to find the descriptions that explains what each variable is used for.

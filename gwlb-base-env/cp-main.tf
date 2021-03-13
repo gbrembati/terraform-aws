@@ -151,7 +151,7 @@ resource "aws_cloudformation_stack" "cft-gwlb-checkpoint" {
     ManagementPasswordHash  = var.admin-pwd-hash
     ManagementVersion       = var.gateway-version
     NumberOfAZs             = "2"
-    ProvisionTag            = var.cme-template-gwlb
+    ProvisionTag            = var.cme-provision-tag
     PublicSubnet1CIDR       = "10.60.0.0/24"
     PublicSubnet2CIDR       = "10.60.1.0/24"
     PublicSubnet3CIDR       = "10.60.2.0/24"
