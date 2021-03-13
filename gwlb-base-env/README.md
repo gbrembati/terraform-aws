@@ -1,7 +1,7 @@
 # AWS Centralized Gateway Load-Balancer Architecture
 This Terraform project is intended to be used as a template in a demonstration or to build a test environment.  
 What it does is creating an infrastructure composed of four VPCs: one contains a Check Point management, two Spoke VPCs and one which contains a Gateway Load-Balancer configured to send the traffic to a Check Point Auto-Scaling Group for Inbound & Outbound protection.    
-As per my deployments (made in France Ireland), this project creates all of the following in about __15 minutes__, where the actual creation time is about half of it and the other 7/8 minutes are the time the management server takes to finish the First Time Configuration.   
+As per my deployments (made in France Ireland), this project creates all of the following in about __17 minutes__, where the actual creation time is about __7 minutes__ and the other __10 minutes__ are the time the management server takes to finish the First Time Configuration.   
 
 
 ## Which are the components created?
@@ -24,7 +24,7 @@ All of the above is created by a mix of resources and three different [Check Poi
 ## Which are the outputs of the project?
 The project gives as outputs the Public IP address of the management server as well as the GWLB controller and template tags to use in the configuration of the management server.   
     
-_Warning:_ Once all of the project is created and you want to connect the gateways to the management, go to the _*GWLB route-table*_ created during the process and create a route to the management CIDR via the peering-connection (this is due to a limitation in CFT outputs).
+__Warning:__ Once all of the project is created and you want to connect the gateways to the management, go to the _*GWLB route-table*_ created during the process and create a route to the management CIDR via the peering-connection (this is due to a limitation in CFT outputs).
 
 ## How to use it
 The first thing that you want to do is to create EC2 Key-Pair that you will later need to connect to the EC2 Instances.
