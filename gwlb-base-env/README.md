@@ -23,7 +23,8 @@ All of the above is created by a mix of resources and three different [Check Poi
 
 ## Which are the outputs of the project?
 The project gives as outputs the Public IP address of the management server as well as the GWLB controller and template tags to use in the configuration of the management server.   
-*Attention:* Once all of the project is created and you want to connect the gateways to the management, go to the *GWLB route-table* created during the process and create a route to the management CIDR via the peering-connection (this is due to a limitation in CFT outputs).
+    
+_Warning:_ Once all of the project is created and you want to connect the gateways to the management, go to the _*GWLB route-table*_ created during the process and create a route to the management CIDR via the peering-connection (this is due to a limitation in CFT outputs).
 
 ## How to use it
 The first thing that you want to do is to create EC2 Key-Pair that you will later need to connect to the EC2 Instances.
