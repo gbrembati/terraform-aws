@@ -5,6 +5,8 @@ variable region {
 }
 variable aws-account-id {
     description = "Set the aws-account-id"
+    type = string
+    sensitive = true
     default = "xxxxxxxxxxxxx"
 }
 variable aws-access-key {
@@ -21,6 +23,7 @@ variable aws-secret-key {
 }
 variable dns-zone {
     description = "Set the name of your zone"
+    type = string
     default = "aws.<yourdomain>.com"
 }
 variable spoke-env {
@@ -34,5 +37,6 @@ variable spoke-env {
 
 variable linux-keypair {
     description = "Set the name of the key you want to use"
-    default = "key-linux-ireland"
+    type = string
+    default = "key-xxxxxx"
 }

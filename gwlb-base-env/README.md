@@ -23,6 +23,7 @@ All of the above is created by a mix of resources and three different [Check Poi
 
 ## Which are the outputs of the project?
 The project gives as outputs the Public IP address of the management server as well as the GWLB controller and template tags to use in the configuration of the management server.
+Once all of the project is created and you want to connect you management system, go to the GWLB route table created during the process and create a route to the management CIDR via the peering-connection (this is due to a limitation in CFT outputs).
 
 ## How to use it
 The first thing that you want to do is to create EC2 Key-Pair that you will later need to connect to the EC2 Instances.
@@ -35,10 +36,7 @@ aws-access-key  = "xxxxxxxxxxxx"
 aws-secret-key  = "xxxxxxxxxxxx"
 aws-account-id  = "xxxxxxxxxxxx"
 
-vpc-checkpoint  = "checkpoint"
-admin-pwd-hash  = "xxxxxxxxxxxx"
 linux-keypair   = "key-xxxxx-ireland"
-ckpgw-keypair   = "key-xxxxx-ireland"
 dns-zone        = "aws.<yourdomain>.com"
 
 spoke-env       = {
@@ -46,6 +44,24 @@ spoke-env       = {
         1 = ["spoke-prod","10.20.0.0/22","10.20.0.0/24","10.20.1.0/24","10.20.2.0/24"]
       # 2 = ["spoke-name","vpc-net/cidr","net-gwlbe/cidr","net-untrust/cidr","net-trust/cidr"]
     }
+
+gateway-connection = "private"
+gateway-name       = "gwlb-ckpgateway"
+gateway-size       = "c5.xlarge"
+gateway-version    = "R80.40-BYOL"
+gateway-sic        = "xxxxxxx"
+ckpgw-keypair      = "key-xxxxxxx"
+admin-pwd-hash     = "xxxxxxxxxxxx"
+
+mgmt-name          = "ckpmgmt"
+mgmt-size          = "m5.xlarge"
+mgmt-version       = "R80.40-BYOL"
+iam-role-mgmt      = "Create with read permissions"
+
+vpc-checkpoint     = "checkpoint"
+vpc-checkpoint-cidr = "10.60.0.0/22"
+policy-pkg-gwlb    = "pkg-gwlb-ingress"
+cme-template-gwlb  = "ckpgwlb"
 ```
 If you want (or need) to further customize other project details, you can change defaults in the different __*name-variables.tf*__ files.   
 Here you will also able to find the descriptions that explains what each variable is used for.
