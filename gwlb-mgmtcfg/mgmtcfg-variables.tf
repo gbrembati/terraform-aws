@@ -62,7 +62,7 @@ variable ckp-mgmt-name {
 variable last-jhf {
     description = "Provide the name of the JHF to be installed"
     type = string
-    default = "Check_Point_R80_40_JUMBO_HF_Bundle_T91_sk165456_FULL.tgz"
+    default = "Check_Point_R80_40_JUMBO_HF_Bundle_T94_sk165456_FULL.tgz"
 }
 variable gwlb-subnets-range {
     description = "Specify the GWLB subnets ranges"

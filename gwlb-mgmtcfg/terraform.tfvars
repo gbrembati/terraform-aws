@@ -13,4 +13,4 @@ ckp-mgmt-template   = "ckpgwlb-template"
 ckp-mgmt-controller = "ckpgwlb-controller"
 
 gwlb-subnets-range  = "{<10.60.0.0,10.60.0.255>, <10.60.1.0,10.60.1.255>}"
-last-jhf            = "Check_Point_R80_40_JUMBO_HF_Bundle_T91_sk165456_FULL.tgz"
+last-jhf            = "Check_Point_R80_40_JUMBO_HF_Bundle_T94_sk165456_FULL.tgz"
