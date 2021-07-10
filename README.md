@@ -4,8 +4,8 @@ hese projects are intended to be used as a template to demonstrate or build a te
 
 ## Which are the projects available?
 The projects can be briefly described as follows:
-1. **./1-gwlb-base-env**: It creates a Gateway Load-Balancer Centralized environment composed by Spoke VPCs, CKP Management and Autoscaling-group
-2. **./2-gwlb-mgmtcfg**: It configures an existing Check Point management through APIs with the settings needed in a GWLB Centralized Architecture
+1. **./gwlb-base-env**: It creates a Gateway Load-Balancer Centralized environment composed by Spoke VPCs, CKP Management and Autoscaling-group
+2. **./gwlb-mgmtcfg**: It configures an existing Check Point management through APIs with the settings needed in a GWLB Centralized Architecture
 
 ## Do you want to see more? 
 Check out my Terraform Microsoft Azure repository here: [gbrembati / terraform-azure](https://github.com/gbrembati/terraform-azure)   
